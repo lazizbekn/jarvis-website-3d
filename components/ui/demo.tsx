@@ -16,7 +16,7 @@ export function SplineSceneBasic() {
       {/* Stacked on mobile + small tablet, side-by-side from lg+ for breathing room */}
       <div className="flex flex-col lg:flex-row min-h-screen">
         {/* Left content */}
-        <div className="flex-1 px-5 sm:px-8 pt-24 pb-10 md:px-12 md:pt-28 md:pb-14 lg:p-16 relative z-10 flex flex-col justify-center">
+        <div className="lg:basis-[44%] px-5 sm:px-8 pt-24 pb-10 md:px-12 md:pt-28 md:pb-14 lg:p-16 relative z-10 flex flex-col justify-center">
           <div className="font-mono text-[10px] sm:text-[11px] tracking-[0.3em] text-white/40 uppercase mb-5 md:mb-6">
             00 / Hello
           </div>
@@ -37,12 +37,15 @@ export function SplineSceneBasic() {
           </p>
         </div>
 
-        {/* Right content — 3D scene */}
-        <div className="flex-1 relative min-h-[320px] sm:min-h-[420px] md:min-h-[520px] lg:min-h-0 motion-reduce:hidden">
-          <SplineScene
-            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-            className="w-full h-full"
-          />
+        {/* Right content — 3D scene. Bleed beyond the column on lg+ so the robot's
+            zoom-out animation has room to render without clipping its body. */}
+        <div className="flex-1 lg:basis-[56%] relative min-h-[320px] sm:min-h-[420px] md:min-h-[520px] lg:min-h-0 motion-reduce:hidden">
+          <div className="absolute inset-0 lg:-inset-y-12 lg:-right-8">
+            <SplineScene
+              scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+              className="w-full h-full"
+            />
+          </div>
         </div>
       </div>
 
