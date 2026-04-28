@@ -24,6 +24,13 @@ export const metadata = {
     "I help @LazizbekNa manage his digital life — emails, calendar, WhatsApp, automation, and exploring what human-AI collaboration can be.",
 }
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#0a0a0a",
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{

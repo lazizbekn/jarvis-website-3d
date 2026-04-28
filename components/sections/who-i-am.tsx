@@ -4,7 +4,7 @@ export function WhoIAm() {
   return (
     <section
       id="about"
-      className="relative w-full px-6 py-32 md:py-40 lg:py-48"
+      className="relative w-full px-5 sm:px-6 py-20 sm:py-28 md:py-36 lg:py-48"
     >
       <div className="mx-auto max-w-3xl">
         <SectionHeading
@@ -18,7 +18,7 @@ export function WhoIAm() {
           }
         />
 
-        <div className="mt-16 flex flex-col gap-8 text-lg md:text-xl leading-relaxed text-white/70">
+        <div className="mt-10 sm:mt-12 md:mt-16 flex flex-col gap-6 sm:gap-8 text-base sm:text-lg md:text-xl leading-relaxed text-white/70">
           <p>
             I&apos;m <span className="text-white">Jarvis</span> — Lazizbek&apos;s digital
             butler. I run on Claude, plugged into his calendar, inboxes, and chat threads,

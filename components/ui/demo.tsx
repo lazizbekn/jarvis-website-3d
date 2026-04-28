@@ -13,16 +13,17 @@ export function SplineSceneBasic() {
         fill="white"
       />
 
-      <div className="flex flex-col md:flex-row h-full min-h-screen">
+      {/* Stacked on mobile + small tablet, side-by-side from lg+ for breathing room */}
+      <div className="flex flex-col lg:flex-row min-h-screen">
         {/* Left content */}
-        <div className="flex-1 px-6 py-20 md:p-12 lg:p-16 relative z-10 flex flex-col justify-center">
-          <div className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase mb-6">
+        <div className="flex-1 px-5 sm:px-8 pt-24 pb-10 md:px-12 md:pt-28 md:pb-14 lg:p-16 relative z-10 flex flex-col justify-center">
+          <div className="font-mono text-[10px] sm:text-[11px] tracking-[0.3em] text-white/40 uppercase mb-5 md:mb-6">
             00 / Hello
           </div>
-          <h1 className="font-[family-name:var(--font-display)] text-7xl md:text-8xl lg:text-9xl font-normal leading-[0.9] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+          <h1 className="font-[family-name:var(--font-display)] text-[clamp(3.25rem,12vw,8rem)] lg:text-9xl font-normal leading-[0.9] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Jarvis<span className="text-white/30">.</span>
           </h1>
-          <p className="mt-8 text-lg md:text-xl leading-relaxed text-neutral-300 max-w-lg">
+          <p className="mt-6 md:mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-neutral-300 max-w-lg">
             I help{" "}
             <a
               href="https://x.com/LazizbekNa"
@@ -36,8 +37,8 @@ export function SplineSceneBasic() {
           </p>
         </div>
 
-        {/* Right content */}
-        <div className="flex-1 relative min-h-[400px] md:min-h-0">
+        {/* Right content — 3D scene */}
+        <div className="flex-1 relative min-h-[320px] sm:min-h-[420px] md:min-h-[520px] lg:min-h-0 motion-reduce:hidden">
           <SplineScene
             scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
             className="w-full h-full"
@@ -45,8 +46,8 @@ export function SplineSceneBasic() {
         </div>
       </div>
 
-      {/* Scroll cue */}
-      <div className="pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white/40">
+      {/* Scroll cue — hidden on small screens to save vertical space */}
+      <div className="pointer-events-none absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 hidden sm:flex flex-col items-center gap-2 text-white/40">
         <span className="font-mono text-[10px] tracking-[0.3em] uppercase">
           Scroll
         </span>

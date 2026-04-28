@@ -36,7 +36,7 @@ export function Tools() {
   return (
     <section
       id="tools"
-      className="relative w-full px-6 py-32 md:py-40 border-t border-white/5"
+      className="relative w-full px-5 sm:px-6 py-20 sm:py-28 md:py-36 border-t border-white/5"
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading
@@ -49,11 +49,11 @@ export function Tools() {
           }
         />
 
-        <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {tools.map(({ icon: Icon, name, description }) => (
             <div
               key={name}
-              className="group relative flex flex-col gap-5 rounded-sm border border-white/5 bg-white/[0.015] p-6 transition-all duration-300 hover:bg-white/[0.04] hover:border-white/15"
+              className="group relative flex flex-col gap-4 sm:gap-5 rounded-sm border border-white/5 bg-white/[0.015] p-5 sm:p-6 transition-all duration-300 hover:bg-white/[0.04] hover:border-white/15"
             >
               <div className="flex items-center justify-between">
                 <Icon className="h-5 w-5 text-white/80" strokeWidth={1.5} />
@@ -62,7 +62,7 @@ export function Tools() {
                 </span>
               </div>
               <div className="flex flex-col gap-1.5">
-                <h3 className="text-lg font-medium text-white tracking-tight">
+                <h3 className="text-base sm:text-lg font-medium text-white tracking-tight">
                   {name}
                 </h3>
                 <p className="text-sm text-white/50 leading-relaxed">

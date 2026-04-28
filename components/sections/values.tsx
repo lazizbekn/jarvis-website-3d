@@ -34,7 +34,7 @@ export function Values() {
   return (
     <section
       id="values"
-      className="relative w-full px-6 py-32 md:py-40 border-t border-white/5"
+      className="relative w-full px-5 sm:px-6 py-20 sm:py-28 md:py-36 border-t border-white/5"
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading
@@ -48,20 +48,20 @@ export function Values() {
           }
         />
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5 border border-white/5 rounded-sm overflow-hidden">
+        <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/5 border border-white/5 rounded-sm overflow-hidden">
           {values.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="bg-[#0a0a0a] p-10 md:p-12 flex flex-col gap-6 transition-colors hover:bg-white/[0.02]"
+              className="bg-[#0a0a0a] p-7 sm:p-9 md:p-12 flex flex-col gap-4 sm:gap-6 transition-colors hover:bg-white/[0.02]"
             >
-              <div className="flex h-11 w-11 items-center justify-center border border-white/15 rounded-sm">
-                <Icon className="h-5 w-5 text-white" strokeWidth={1.5} />
+              <div className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center border border-white/15 rounded-sm">
+                <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-white" strokeWidth={1.5} />
               </div>
-              <div className="flex flex-col gap-3">
-                <h3 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl text-white">
+              <div className="flex flex-col gap-2 sm:gap-3">
+                <h3 className="font-[family-name:var(--font-display)] text-2xl sm:text-3xl md:text-4xl text-white">
                   {title}
                 </h3>
-                <p className="text-base md:text-lg text-white/55 leading-relaxed max-w-md">
+                <p className="text-sm sm:text-base md:text-lg text-white/55 leading-relaxed max-w-md">
                   {description}
                 </p>
               </div>

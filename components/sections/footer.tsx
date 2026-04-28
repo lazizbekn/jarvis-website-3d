@@ -31,11 +31,11 @@ const links: LinkItem[] = [
 
 export function Footer() {
   return (
-    <footer className="relative w-full px-6 py-16 border-t border-white/5">
-      <div className="mx-auto max-w-6xl flex flex-col gap-12">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
+    <footer className="relative w-full px-5 sm:px-6 py-12 sm:py-14 md:py-16 border-t border-white/5">
+      <div className="mx-auto max-w-6xl flex flex-col gap-10 sm:gap-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 md:gap-10">
           <div className="flex flex-col gap-3 max-w-md">
-            <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white leading-none">
+            <h3 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl text-white leading-none">
               Jarvis<span className="text-white/30">.</span>
             </h3>
             <p className="text-sm text-white/50">
@@ -73,11 +73,11 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 pt-8 border-t border-white/5">
-          <p className="font-mono text-xs text-white/40 tracking-wide">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 sm:gap-3 pt-6 sm:pt-8 border-t border-white/5">
+          <p className="font-mono text-[11px] sm:text-xs text-white/40 tracking-wide">
             Powered by Claude · Engineered by Lazizbek · {new Date().getFullYear()}
           </p>
-          <p className="font-mono text-xs text-white/30 tracking-wide">
+          <p className="font-mono text-[11px] sm:text-xs text-white/30 tracking-wide">
             v1.0 — running quietly in the background
           </p>
         </div>
