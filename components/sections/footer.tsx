@@ -35,7 +35,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl flex flex-col gap-10 sm:gap-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 md:gap-10">
           <div className="flex flex-col gap-3 max-w-md">
-            <h3 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl text-white leading-none">
+            <h3 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl text-white leading-[1.05] pb-1">
               Jarvis<span className="text-white/30">.</span>
             </h3>
             <p className="text-sm text-white/50">

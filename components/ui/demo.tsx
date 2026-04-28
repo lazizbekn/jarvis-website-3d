@@ -20,7 +20,7 @@ export function SplineSceneBasic() {
           <div className="font-mono text-[10px] sm:text-[11px] tracking-[0.3em] text-white/40 uppercase mb-5 md:mb-6">
             00 / Hello
           </div>
-          <h1 className="font-[family-name:var(--font-display)] text-[clamp(3.25rem,12vw,8rem)] lg:text-9xl font-normal leading-[0.9] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+          <h1 className="font-[family-name:var(--font-display)] text-[clamp(3.25rem,12vw,8rem)] lg:text-9xl font-normal leading-[1.05] tracking-tight pb-3 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Jarvis<span className="text-white/30">.</span>
           </h1>
           <p className="mt-6 md:mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-neutral-300 max-w-lg">
