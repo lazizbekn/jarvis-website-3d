@@ -27,33 +27,34 @@ export function SplineSceneBasic() {
         />
       </div>
 
-      {/* === DESKTOP: text overlay on the left === */}
-      <div className="hidden lg:flex absolute inset-y-0 left-0 z-10 w-[44%] xl:w-[40%] p-16 flex-col justify-center pointer-events-none">
-        <div className="pointer-events-auto">
-          <div className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase mb-6">
-            00 / Hello
-          </div>
-          <h1 className="font-[family-name:var(--font-display)] text-[clamp(4.5rem,9vw,8rem)] xl:text-9xl font-normal leading-[1.05] tracking-tight pb-3 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-            Jarvis<span className="text-white/30">.</span>
-          </h1>
-          <p className="mt-8 text-lg xl:text-xl leading-relaxed text-neutral-300 max-w-lg">
-            I help{" "}
-            <a
-              href="https://x.com/LazizbekNa"
-              target="_blank"
-              rel="noreferrer"
-              className="text-white underline-offset-4 hover:underline"
-            >
-              @LazizbekNa
-            </a>{" "}
-            manage his digital life — emails, calendar, WhatsApp, automation, and exploring what human-AI collaboration can be.
-          </p>
+      {/* === DESKTOP: text overlay on the left ===
+          pointer-events-none lets the cursor pass through to the 3D canvas
+          so the robot keeps tracking the mouse over the text.
+          select-none prevents the text from being selectable / copyable. */}
+      <div className="hidden lg:flex absolute inset-y-0 left-0 z-10 w-[44%] xl:w-[40%] p-16 flex-col justify-center pointer-events-none select-none">
+        <div className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase mb-6">
+          00 / Hello
         </div>
+        <h1 className="font-[family-name:var(--font-display)] text-[clamp(4.5rem,9vw,8rem)] xl:text-9xl font-normal leading-[1.05] tracking-tight pb-3 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+          Jarvis<span className="text-white/30">.</span>
+        </h1>
+        <p className="mt-8 text-lg xl:text-xl leading-relaxed text-neutral-300 max-w-lg">
+          I help{" "}
+          <a
+            href="https://x.com/LazizbekNa"
+            target="_blank"
+            rel="noreferrer"
+            className="text-white underline-offset-4 hover:underline pointer-events-auto select-auto"
+          >
+            @LazizbekNa
+          </a>{" "}
+          manage his digital life — emails, calendar, WhatsApp, automation, and exploring what human-AI collaboration can be.
+        </p>
       </div>
 
       {/* === MOBILE / TABLET: stacked column layout === */}
       <div className="lg:hidden flex flex-col min-h-screen">
-        <div className="px-5 sm:px-8 pt-24 pb-10 md:px-12 md:pt-28 md:pb-14 relative z-10 flex flex-col justify-center">
+        <div className="px-5 sm:px-8 pt-24 pb-10 md:px-12 md:pt-28 md:pb-14 relative z-10 flex flex-col justify-center select-none">
           <div className="font-mono text-[10px] sm:text-[11px] tracking-[0.3em] text-white/40 uppercase mb-5 md:mb-6">
             00 / Hello
           </div>
