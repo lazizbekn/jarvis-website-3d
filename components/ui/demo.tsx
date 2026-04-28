@@ -35,8 +35,10 @@ export function SplineSceneBasic() {
         <div className="font-mono text-[11px] tracking-[0.3em] text-white/40 uppercase mb-6">
           00 / Hello
         </div>
-        <h1 className="font-[family-name:var(--font-display)] text-[clamp(4.5rem,9vw,8rem)] xl:text-9xl font-normal leading-[1.1] tracking-tight text-neutral-50">
-          Jarvis
+        <h1 className="font-[family-name:var(--font-display)] text-[clamp(4.5rem,9vw,8rem)] xl:text-9xl font-normal leading-[1.25] tracking-tight">
+          <span className="inline-block pb-[0.35em] bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 via-neutral-200 to-neutral-500">
+            Jarvis
+          </span>
         </h1>
         <p className="mt-8 text-lg xl:text-xl leading-relaxed text-neutral-300 max-w-lg">
           I help{" "}
@@ -58,8 +60,10 @@ export function SplineSceneBasic() {
           <div className="font-mono text-[10px] sm:text-[11px] tracking-[0.3em] text-white/40 uppercase mb-5 md:mb-6">
             00 / Hello
           </div>
-          <h1 className="font-[family-name:var(--font-display)] text-[clamp(3.25rem,12vw,8rem)] font-normal leading-[1.1] tracking-tight text-neutral-50">
-            Jarvis
+          <h1 className="font-[family-name:var(--font-display)] text-[clamp(3.25rem,12vw,8rem)] font-normal leading-[1.25] tracking-tight">
+            <span className="inline-block pb-[0.35em] bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 via-neutral-200 to-neutral-500">
+              Jarvis
+            </span>
           </h1>
           <p className="mt-6 md:mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-neutral-300 max-w-lg">
             I help{" "}
