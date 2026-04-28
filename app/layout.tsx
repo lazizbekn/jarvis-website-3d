@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { SmoothScroll } from "@/components/smooth-scroll"
 import { cn } from "@/lib/utils";
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' })
@@ -49,6 +50,7 @@ export default function RootLayout({
       )}
     >
       <body className="bg-[#0a0a0a] text-white">
+        <SmoothScroll />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
