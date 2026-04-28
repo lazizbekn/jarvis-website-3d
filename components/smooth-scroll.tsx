@@ -21,10 +21,17 @@ export function SmoothScroll() {
     if (prefersReducedMotion) return
 
     const lenis = new Lenis({
-      duration: 1.15,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // expo-out
+      // lerp = continuous interpolation factor.
+      // Lower = smoother (more inertia), higher = snappier.
+      // 0.08 is the sweet spot for buttery scroll without feeling laggy.
+      lerp: 0.08,
       smoothWheel: true,
-      touchMultiplier: 1.4,
+      // Wheel sensitivity — 1 = native distance, slightly under 1 feels
+      // more controlled with the lerp.
+      wheelMultiplier: 1,
+      // Sync touch with the same lerp so mobile/trackpad inertia matches.
+      syncTouch: true,
+      syncTouchLerp: 0.08,
     })
 
     let frame: number
